@@ -26,10 +26,11 @@ slots:
 
 actions:
   - action_return_balance
+  - action_remember_name
 
 responses:
   utter_greet:
-    - text: "Hey! What is your account number?"
+    - text: "Hey! What is your name?"
 
   utter_goodbye:
     - text: "Bye"
@@ -37,11 +38,11 @@ responses:
   utter_iamabot:
     - text: "I am a bot, powered by Rasa."
 
-  utter_my_name:
-    - text: "Can you tell me your account name?"
+  utter_my_number:
+    - text: "Can you tell me your account number, {account_name}?"
 
   utter_ask_help:
-    - text: "How I can help you?"
+    - text: "Hello {account_name}, how I can help you?"
 
 session_config:
   session_expiration_time: 60

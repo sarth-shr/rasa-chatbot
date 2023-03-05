@@ -5,18 +5,19 @@ stories:
     steps:
       - intent: greet
       - action: utter_greet
-      - intent: my_number
-        entities:
-          - account_number
-      - slot_was_set:
-          - account_number
-
-      - action: utter_ask_help
-      - intent: ask_balance
-      - action: utter_my_name
       - intent: my_name
         entities:
           - account_name
       - slot_was_set:
           - account_name
+      - action: action_remember_name
+
+      - action: utter_ask_help
+      - intent: ask_balance
+      - action: utter_my_number
+      - intent: my_number
+        entities:
+          - account_number
+      - slot_was_set:
+          - account_number
       - action: action_return_balance
