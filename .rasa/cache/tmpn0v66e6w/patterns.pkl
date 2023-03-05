@@ -1,0 +1,6 @@
+[
+  {
+    "name": "account_number",
+    "pattern": "\\d{7,10}"
+  }
+]

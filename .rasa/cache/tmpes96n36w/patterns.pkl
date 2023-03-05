@@ -1,0 +1,10 @@
+[
+  {
+    "name": "account_name",
+    "pattern": "(\\bJohn\\b|\\bJack\\b|\\bJill\\b|\\bJoe\\b|\\bAdam\\b|\\bAlex\\b)"
+  },
+  {
+    "name": "account_number",
+    "pattern": "(\\b1234567890\\b|\\b0123456789\\b)"
+  }
+]

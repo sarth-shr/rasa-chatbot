@@ -1,0 +1,74 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+
+  - intent: my_name
+    examples: |
+      - my name is [John]{"entity":"account_name"}
+      - name is [Jack]{"entity":"account_name"} 
+      - it is [Jill]{"entity":"account_name"} 
+      - it's [Joe]{"entity":"account_name"} 
+      - I am [Adam]{"entity":"account_name"} 
+      - This is [Alex]{"entity":"account_name"}
+
+  - lookup: account_name
+    examples: |
+      - John
+      - Jack
+      - Jill
+      - Joe
+      - Adam
+      - Alex
+
+  - intent: my_number
+    examples: |
+      - my account number is [123567890]{"entity":"account_number"}
+      - number is [0123456789]{"entity":"account_number"}
+
+  - lookup: account_number
+    examples: |
+      - 1234567890
+      - 0123456789
+
+  - intent: ask_balance
+    examples: |
+      - what is my account balance?
+      - check my balance
+      - account balance information
+      - how much money do I have
+      - money left
